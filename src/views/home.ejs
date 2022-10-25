@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./fetch.js"></script> -->
+    <title>MAK CSV HANDLER</title>
+</head>
+<body>
+    <h1>WELCOME </h1>
+
+    <div>
+        <h3>UPLOAD:</h3>
+        <form action="http://localhost:8888/upload" enctype="multipart/form-data" method="POST">
+            <input type="file" class="admin__input" id="myFile" name="file" />
+            <input class="admin__submit" type="submit" />
+        </form>
+    </div>
+
+    <div>
+        <h3>VIEW DATA:</h3>
+        <form action="/getdata">
+            <input type="text" value="enter here">
+            <input class="admin__submit" type="submit" />
+            <p id="display">
+
+            </p>
+        </form>
+
+        <!-- <input type="text" value="enter here"><br/>
+        <button type="button" id="query" onclick="myfunc()">Get data</button>
+        <p id="demo">
+
+        </p> -->
+    </div>
+</body>
+</html>
